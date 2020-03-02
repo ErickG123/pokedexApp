@@ -7,13 +7,14 @@
 </ion-header>
 
 <ion-content color="dark">
-  <ion-searchbar placeholder="Buscar Pokémon" color="medium" (ionChange)="buscarPokemon($event)"></ion-searchbar>
+  <ion-searchbar placeholder="Buscar Pokemon" color="medium" (ionChange)="buscarPokemon($event)"></ion-searchbar>
 
   <ion-item-sliding *ngFor="let pokemon of listaPokemonApi">
-    <ion-item color="dark" (click)="abrirDadosPokemon(pokemon)"> 
+    
+    <ion-item color="dark" (click)="abrirDadosPokemon(pokemon)">
 
       <ion-chip color="light" slot="start">
-        <ion-label"></ion-label>
+        <ion-label ></ion-label>
       </ion-chip>
 
       <ion-label>
@@ -24,7 +25,7 @@
       </ion-label>
 
       <ion-thumbnail slot="end">
-        <img>
+        <img >
       </ion-thumbnail>
 
     </ion-item>
