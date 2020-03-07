@@ -17,4 +17,8 @@ export class PokedexApiService {
   public buscaPorNumero(numero: Number){
     return this.http.get(`${this.url}/${numero}`);
   }
+
+  public buscarPokemonUrl(url:string){
+    return this.http.get(url);
+  }
 }
